@@ -29,9 +29,8 @@ header {
 	border-radius:50px;
 }
 
-#tag-menu {
-	display:none;
-}
+#tag-menu,#tab1,#tab2,#tab3 {
+	display:none;}
 
 
 #tag-menu:checked ~ div.jw-drawer {
@@ -147,8 +146,6 @@ label {
                 font-weight:bold;
 
                 font-size:14px;
-
-                display: block;
 
                 padding: 10px 30px;
 
