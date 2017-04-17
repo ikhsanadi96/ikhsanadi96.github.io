@@ -92,8 +92,7 @@ table{margin:auto; border:1; width:60%; height:100%;}
 td{margin:auto; width:60%; height:100%; background-color:pink; }
 headers,footer{text-align:center; }
 h2,h4{color:blue;}
-one{border-bottom: 6px solid red;
-	background-color: white;}
+
 html{background-color:grey}
 
 nav {
@@ -130,7 +129,9 @@ article {
     padding: 1em;
     overflow: hidden;
 }
-
+one{
+	border-bottom: 6px solid red;
+	background-color: white;}
 two{
     border-bottom: 6px solid orange;
 }
