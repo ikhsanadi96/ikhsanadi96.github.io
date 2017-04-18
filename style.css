@@ -5,6 +5,7 @@ all{
 }
 html{
 	background-image:url("3.jpg");
+	background-repeat:no-repeat;
 }
 
 .menu-bar {
