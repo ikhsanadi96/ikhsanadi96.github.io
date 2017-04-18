@@ -156,7 +156,7 @@ label:hover {
                 text-decoration:underline;
 }
 
-#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3 
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3 {
                 display:block;
 }
 
@@ -166,7 +166,7 @@ input:checked+ label  {
 }
 
 section {
-        	border:1px solid black;
+        	border:1px solid white;
 		background-color:black;              
                 padding:0px 100px 100px 100px;
                 width:351px;
