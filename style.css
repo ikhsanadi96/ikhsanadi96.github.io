@@ -1,12 +1,16 @@
-
 all{
 	padding:0;
 	margin:0;
 }
+
 html{
 	background-image:url("3.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
+}
+
+a  {
+	color:white;
 }
 
 .menu-bar {
