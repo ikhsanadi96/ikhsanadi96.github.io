@@ -1,0 +1,88 @@
+  body{
+
+    	background:linear-gradient(#070201,#483947,#070000);
+    	font-weight: bold;
+    }
+
+    div {
+	background-color:pink;
+	width: 45%;
+	height: 645px;
+	overflow: hidden;
+	margin:5px auto;
+	text-align: center;
+	box-shadow: 0px 0px 40px black;
+}
+.utama {
+	background-color: grey;
+ 
+	text-align: center;
+	width: 40%;
+	box-shadow: 0px 0px 40px white;
+	
+
+}
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+
+nav ul {
+	background: grey; 
+	padding: 0 10px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	
+	box-shadow: 0px 0px 30px green;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+	nav ul li {
+		
+	}
+		nav ul li:hover {
+			background: blue;
+			box-shadow: 0px 0px 30px white;
+			opacity: .8;
+		}
+			nav ul li:hover a {
+				color: black;
+				background-color: white;
+
+			}
+		
+		nav ul li a {
+			display: block; padding: 0px 50px;
+			color: #fff; text-decoration: none;
+		}
+			
+		
+	nav ul ul {
+		background: #53bd84; border-radius: 0px; padding: 0;
+		position: absolute; top: 100%;
+	}
+		nav ul ul li {
+			
+			border-top: 1px solid #53bd84;
+			border-bottom: 1px solid #53bd84; position: relative;
+		}
+			nav ul ul li a {
+				padding: 15px 5px;
+				color: #fff;
+			}	
+				nav ul ul li a:hover {
+					background: black;
+					color: white;
+				}
+		
+	nav ul ul ul {
+		 left: 100%; top:0;
+	}

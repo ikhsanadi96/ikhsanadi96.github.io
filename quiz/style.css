@@ -1,0 +1,183 @@
+   body{
+
+    	background:linear-gradient(#372231,#586957,#373330);
+    	font-weight: bold;
+    }
+
+
+.utama {
+	margin: 50px auto; 
+	text-align: center;
+	background-image: url("8.jpg");
+	width: 80%;
+	height: 400px;
+	box-shadow: 0px 0px 40px white;
+	opacity: .8;
+
+}
+
+.nav{
+	margin: 50px auto; 
+	text-align: center;
+	opacity: .9;
+}
+
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+
+nav ul {
+	background: grey; 
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	box-shadow: 0px 0px 30px black;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+	nav ul li {
+		float: left;
+	}
+		nav ul li:hover {
+			background: blue;
+			box-shadow: 0px 0px 30px white;
+			opacity: .8;
+		}
+			nav ul li:hover a {
+				color: black;
+				background-color: pink;
+
+			}
+		
+		nav ul li a {
+			display: block; padding: 25px 200px;
+			color: #fff; text-decoration: none;
+		}
+			
+		
+	nav ul ul {
+		background: #53bd84; border-radius: 0px; padding: 0;
+		position: absolute; top: 100%;
+	}
+		nav ul ul li {
+			float: none; 
+			border-top: 1px solid #53bd84;
+			border-bottom: 1px solid #53bd84; position: relative;
+		}
+			nav ul ul li a {
+				padding: 15px 175px;
+				color: #fff;
+			}	
+				nav ul ul li a:hover {
+					background: yellow;
+				}
+		
+	nav ul ul ul {
+		position: absolute; left: 100%; top:0;
+	}
+
+    h2{
+    	margin-left: 25%;
+    	margin-right: 25%;
+    	color: black;
+    	text-align: center;
+    	background-color: white;
+    	box-shadow: 0px 0px 30px blue;
+    	opacity: .6;
+    }
+
+
+
+	.grid{
+
+		background-image:url("22.jpg");
+		width: 70%;
+		height: 400px;
+		margin: 0px auto;
+		padding: 10px 50px 50px 50px;
+		border-radius: 5px;
+		border: 2px solid #cbcbcb;
+		box-shadow:0px 0px 30px black;
+	}
+    
+   .grid h1{
+    	
+    	font-family: california;
+    	border-radius: 15px;
+    	background-color: pink;
+    	color: black;
+    	font-size: 60px;
+    	text-align: center;
+    	box-shadow: 0px 0px 30px black;
+    }
+
+
+    .grid #question{
+
+    	font-family: sans-serif;
+    	font-size: 20px;
+    	color: #5a6772;
+    	text-align: center;
+    
+    }
+
+    .buttons{
+
+    	margin-top: 30px;
+    	position: relative;
+    	left: 28px;
+
+    }
+
+    #btn1, #btn2, #btn3, #btn4{
+     
+     background-color: #556670;
+     width: 38%;
+     font-size: 20px;
+     color:#fff;
+     border: 1px solid #1d3c6a;
+     margin: 10px 40px 10px 0px;
+     padding: 10px 20px;
+     border-radius: 40px;
+    }
+
+    #progress{
+
+    	color: #2b2b2b;
+    	font-size: 18px;
+    }
+
+    #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover{
+     
+     background-color: black;
+     cursor: pointer;
+    }
+     
+    #btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus{
+     
+     border-radius: 50px;
+     outline: 0;
+    }
+
+
+ 
+
+    @media (min-width: 268px) and (max-width: 1220px)  {
+             
+             #btn1, #btn2, #btn3, #btn4{
+                 margin: 2px;
+             }
+
+
+
+   }

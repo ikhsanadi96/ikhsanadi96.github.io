@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Materi</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+
+    <script>
+        var i=0,images=["slide2/slide1.jpg","slide2/slide2.jpg","slide2/slide3.jpg","slide2/slide4.jpg",
+                        "slide2/slide5.jpg","slide2/slide6.jpg","slide2/slide7.jpg","slide2/slide8.jpg",
+                        "slide2/slide9.jpg","slide2/slide10.jpg","slide2/slide11.jpg","slide2/slide12.jpg",
+                        "slide2/slide13.jpg","slide2/slide14.jpg","slide2/slide15.jpg","slide2/slide16.jpg",
+                        "slide2/slide17.jpg","slide2/slide18.jpg","slide2/slide19.jpg","slide2/slide20.jpg",
+                        "slide2/slide21.jpg","slide2/slide22.jpg","slide2/slide23.jpg","slide2/slide24.jpg",
+                        "slide2/slide25.jpg","slide2/slide26.jpg","slide2/slide27.jpg","slide2/slide28.jpg"];
+
+
+        function mySlide(slides)
+        {
+            if(slides==='next')
+            {
+                i++;
+                if(i===images.length){i=images.length-1;}
+            }else{
+                i--;
+                if(i<0){i=0;}
+            }
+            document.getElementById('slide').src=images[i];
+        }
+    </script>
+
+</head>
+<body>
+
+<div>
+<nav class="utama">
+    <ul>
+        <li><a>Materi Lain</a>
+            <ul>
+                <li><a>Penjumlahan dan Pengurangan</a>
+                    <ul>
+                        <li><a href="slide.html">Bagian 1</a></li>
+                        <li><a href="slide2.html">Bagian 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="slide3.html">Perkalian dan Pembagian</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+</nav>
+    <img src="slide2/slide1.jpg" id="slide" alt="" width="540" height="560">
+    <br>
+    <button onclick="mySlide('back');">back</button>
+    <button onclick="mySlide('next');">next</button>
+    <a href="1.html">back to home</a>
+</div>
+
+</body>
+</html>

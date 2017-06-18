@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Materi</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+
+    <script>
+        var i=0,images=["slide/slide1.jpg","slide/slide2.jpg","slide/slide3.jpg","slide/slide4.jpg",
+                        "slide/slide5.jpg","slide/slide6.jpg","slide/slide7.jpg","slide/slide8.jpg",
+                        "slide/slide9.jpg","slide/slide10.jpg","slide/slide11.jpg","slide/slide12.jpg",
+                        "slide/slide13.jpg","slide/slide14.jpg","slide/slide15.jpg","slide/slide16.jpg",
+                        "slide/slide17.jpg","slide/slide18.jpg","slide/slide19.jpg","slide/slide20.jpg",
+                        "slide/slide21.jpg","slide/slide22.jpg","slide/slide23.jpg","slide/slide24.jpg",
+                        "slide/slide25.jpg"];
+
+
+        function mySlide(slides)
+        {
+            if(slides==='next')
+            {
+                i++;
+                if(i===images.length){i=images.length-1;}
+            }else{
+                i--;
+                if(i<0){i=0;}
+            }
+            document.getElementById('slide').src=images[i];
+        }
+    </script>
+
+</head>
+<body>
+
+<div>
+<nav class="utama">
+    <ul>
+        <li><a>Materi Lain</a>
+            <ul>
+                <li><a>Penjumlahan dan Pengurangan</a>
+                    <ul>
+                        <li><a href="slide.html">Bagian 1</a></li>
+                        <li><a href="slide2.html">Bagian 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="slide3.html">Perkalian dan Pembagian</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+</nav>
+    <img src="slide/slide1.jpg" id="slide" alt="" width="540" height="560">
+    <br>
+    <button onclick="mySlide('back');">back</button>
+    <button onclick="mySlide('next');">next</button>
+    <a href="1.html">back to home</a>
+</div>
+
+</body>
+</html>
