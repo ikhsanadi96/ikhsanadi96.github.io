@@ -44,7 +44,7 @@ quest.innerHTML = question[quesNum][0];
 
          if(quesNum === 9){
           var mainBody = document.getElementById("quiz");
-          mainBody.innerHTML = "<h1>"+"Benar "+ score+" dari 10 soal"+"</h1>"+"<p>"+"Anda telah selesai mengerjakan soal quiz pengurangan"+ "</p>"+"<p>"+"Terus belajar, agar semakin bisa dalam pengurangan angka yang lebih besar"+ "</p>";
+          mainBody.innerHTML = "<h1>"+"Benar "+ score+" dari 10 soal"+"</h1>"+"<p>"+"Anda telah selesai mengerjakan soal quiz penjumlahan"+ "</p>"+"<p>"+"Terus belajar, agar semakin bisa dalam penjumlahan angka yang lebih besar"+ "</p>";
 
         }
 
